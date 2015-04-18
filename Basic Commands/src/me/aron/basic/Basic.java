@@ -138,6 +138,8 @@ public boolean onCommand(CommandSender sender, Command cmd, String lbl, String[]
 				
 			}
 			
+		} else {
+			player.sendMessage(ChatColor.GREEN + "[BasicCommands] " + ChatColor.RED + "You do not have Permissions to perform this Command.");
 		}
 	
 	if(player.hasPermission("spawn.set")) {
@@ -151,6 +153,8 @@ public boolean onCommand(CommandSender sender, Command cmd, String lbl, String[]
 			
 		}
 		
+	} else {
+		player.sendMessage(ChatColor.GREEN + "[BasicCommands] " + ChatColor.RED + "You do not have Permissions to perform this Command.");
 	}
 	
 	return false;
