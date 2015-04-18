@@ -128,6 +128,12 @@ public boolean onCommand(CommandSender sender, Command cmd, String lbl, String[]
     			}
 		}
 	
+	if(lbl.equalsIgnoreCase("mystery")) {
+		
+		player.sendMessage(ChatColor.GREEN + "Basic Commands" + ChatColor.AQUA + "Scooby dooby doo!");
+		
+	}
+	
 	return false;
 	}
 	
