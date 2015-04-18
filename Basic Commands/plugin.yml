@@ -14,4 +14,4 @@ commands:
   rename:
   broadcast:
   spawn:
-  setspawn:
+  spawnset:
