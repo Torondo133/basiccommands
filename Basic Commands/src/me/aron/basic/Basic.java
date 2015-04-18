@@ -139,12 +139,6 @@ public boolean onCommand(CommandSender sender, Command cmd, String lbl, String[]
 			}
 			
 		}
-		
-	{
-		
-		player.sendMessage(ChatColor.GREEN + "[BasicCommands] " + ChatColor.RED + "You do not Permissions to perform this Command.");
-		
-	}
 	
 	if(player.hasPermission("spawn.set")) {
 		
