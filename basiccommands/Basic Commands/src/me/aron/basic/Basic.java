@@ -5,8 +5,6 @@ import java.util.logging.Logger;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
-import org.bukkit.Location;
-import org.bukkit.World;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Entity;
@@ -129,33 +127,10 @@ public boolean onCommand(CommandSender sender, Command cmd, String lbl, String[]
             		System.out.println("[BasicCommands] This Command must be executed by an ingame Player");
     			}
 		}
-	if(player.hasPermission("spawn")) {
-		
-		if(lbl.equalsIgnoreCase("spawn")) {
-				
-			player.teleport(player.getWorld().getSpawnLocation());
-			player.sendMessage(ChatColor.GREEN + "[BasicCommands] " + ChatColor.RED + "You are now on the spawn!.");
-				
-			}
-			
-		}
-		
-	{
-		
-		player.sendMessage(ChatColor.GREEN + "[BasicCommands] " + ChatColor.RED + "You do not Permissions to perform this Command.");
-		
-	}
 	
-	if(player.hasPermission("spawn.set")) {
+	if(lbl.equalsIgnoreCase("mystery")) {
 		
-		if(lbl.equalsIgnoreCase("spawnset")) {
-			
-			World world = player.getWorld();
-			Location loc = player.getLocation();
-			world.setSpawnLocation(loc.getBlockX(), loc.getBlockY() + 1, loc.getBlockZ());
-			player.sendMessage(ChatColor.GREEN + "[BasicCommands] " + ChatColor.RED + "You set the spawn, right here.");
-			
-		}
+		player.sendMessage(ChatColor.GREEN + "Basic Commands" + ChatColor.AQUA + "Scooby dooby doo!");
 		
 	}
 	
