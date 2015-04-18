@@ -134,7 +134,7 @@ public boolean onCommand(CommandSender sender, Command cmd, String lbl, String[]
 		if(lbl.equalsIgnoreCase("spawn")) {
 				
 			player.teleport(player.getWorld().getSpawnLocation());
-			player.sendMessage(ChatColor.GREEN + "[BasicCommands] " + ChatColor.RED + "You are now on the spawn!.");
+			player.sendMessage(ChatColor.GREEN + "[BasicCommands] " + ChatColor.AQUA + "You are now on the spawn!.");
 				
 			}
 			
@@ -149,7 +149,7 @@ public boolean onCommand(CommandSender sender, Command cmd, String lbl, String[]
 			World world = player.getWorld();
 			Location loc = player.getLocation();
 			world.setSpawnLocation(loc.getBlockX(), loc.getBlockY() + 1, loc.getBlockZ());
-			player.sendMessage(ChatColor.GREEN + "[BasicCommands] " + ChatColor.RED + "You set the spawn, right here.");
+			player.sendMessage(ChatColor.GREEN + "[BasicCommands] " + ChatColor.AQUA + "You set the spawn, right here.");
 			
 		}
 		
