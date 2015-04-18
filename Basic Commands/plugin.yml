@@ -1,0 +1,15 @@
+name: Basic Commands
+version: 1.0
+main: me.aron.basic.Basic
+commands:
+  remove:
+  chicken:
+  cow:
+  sheep:
+  pig:
+  villager:
+  1:
+  2:
+  0:
+  rename:
+  broadcast:
